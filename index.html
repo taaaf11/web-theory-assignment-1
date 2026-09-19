@@ -9,45 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Gaegu&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      body {
-        background-color: #11111b;
-      }
-
-      .text,
-      td,
-      th {
-        color: #cdd6f4;
-        font-family: "Gaegu";
-        font-size: 14pt;
-      }
-
-      .hero {
-        display: flex;
-        flex-direction: column;
-        margin: 60px 160px;
-        padding: 20px 40px;
-        background-color: #1e1e2e;
-        border-radius: 20px;
-        position: relative;
-      }
-
-      #main-heading {
-        color: #f38ba8;
-        font-family: "Outfit";
-      }
-
-      .info-bullets {
-        margin-top: -12px;
-        margin-left: 12px;
-      }
-
-      #stars {
-        width: 5px;
-        height: 5px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
@@ -81,6 +43,7 @@
         scenes.
       </h1>
 
+      
       <h2 style="font-family: Outfit; color: #cba6f7">Personal</h2>
 
       <div class="info-bullets">
@@ -93,53 +56,29 @@
       <h2 style="font-family: Outfit; color: #f2cdcd">Projects</h2>
 
       <div class="info-bullets">
-        <ul>
-          <li class="text">
-            <a
-              href="https://github.com/taaaf11/brainf-interpreter"
-              style="color: #cdd6f4"
-            >
-              Brainfuck Interpreter: An interpreter for <b>Brainfuck</b>, an
-              esoteric programming language.
-            </a>
-          </li>
-
-          <li class="text">
-            <a
-              href="https://github.com/taaaf11/flashcards-flutter"
-              style="color: #cdd6f4"
-            >
-              Flashcards Flutter: A flashcard app for learning.
-            </a>
-          </li>
-
-          <li class="text">
-            <a
-              href="https://github.com/taaaf11/Array-Implementation-using-Stack"
-              style="color: #cdd6f4"
-            >
-              Array Implementation using Stack: A simple implementation of an
-              array using a stack data structure.
-            </a>
-          </li>
-
-          <li class="text">
-            <a href="https://github.com/taaaf11/Ta-Do" style="color: #cdd6f4">
-              Ta-Do: A simple to-do (mobile) app built in Python.
-            </a>
-          </li>
-
-          <li class="text">
-            <a
-              href="https://github.com/taaaf11/password-generator"
-              style="color: #cdd6f4"
-            >
-              Simple password generator built in Python.
-            </a>
-          </li>
-
-          <li class="text">Building customized ERP System for LGU.</li>
-        </ul>
+        <table border="1" id="projects-table">
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Link</th>
+          </tr>
+          
+          <tr>
+            <td>Brainfuck Interpreter</td>
+            <td>An interpreter for Brainfuck, an esoteric programming language.</td>
+            <td><a href="https://github.com/taaaf11/brainf-interpreter" target="_blank" class="text">GitHub</a></td>
+          </tr>
+          <tr>
+            <td>Array Implementation using Stack</td>
+            <td>A simple implementation of an array using a stack data structure.</td>
+            <td><a href="https://github.com/taaaf11/Array-Implementation-using-Stack" target="_blank" class="text">GitHub</a></td>
+          </tr>
+          <tr>
+            <td>Ta-Do</td>
+            <td>A simple to-do (mobile) app built in Python.</td>
+            <td><a href="https://github.com/taaaf11/Ta-D" target="_blank" class="text">GitHub</a></td>
+          </tr>
+        </table>
       </div>
 
       <h2 style="font-family: Outfit; color: #fab387">Skills / Technologies</h2>
@@ -196,6 +135,20 @@
           </li>
         </ul>
       </div>
+      
+      <!-- <hr> -->
+
+      <div class="click-me">
+        <p class="click-me-text text">Click me</p>
+        <!-- <img src="images/arrow.png" width="60px" height="60px"> -->
+        <div>
+        <!-- <button class="click-me-btn" id="click-me-btn-btn">Click me</button> -->
+        <button class="click-me-btn" id="click-me-btn-btn">Click me</button>
+        </div>
+      </div>
+      <p class="text" style="text-align: center;">Total clicks:</p>
     </div>
   </body>
+
+  <script src="scripts.js" defer></script>
 </html>
